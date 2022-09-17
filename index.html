@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+
+<body>
+     <label for="">String
+          <input type="text" id="stringInp" value="ahihi ngu ngoc">
+     </label>
+     <br>
+     <label for="">Number
+          <input type="number" name="" id="numberInp" value="3">
+     </label>
+     <br>
+     <button id="btn-convert">
+          Convert
+     </button>
+
+
+     <script>
+          let stringInp = document.getElementById('stringInp');
+          let numberInp = document.getElementById('numberInp');
+          let convertBtn = document.getElementById('btn-convert');
+          let newString = '';
+
+          convertBtn.addEventListener('click', function (e) {
+               newString = stringInp.value.slice(0, numberInp.value);
+               console.log(newString);
+               e.preventDefault();
+          });
+          // newString = stringTemp.replace(/ /g, '...');
+
+
+
+     </script>
+</body>
+
+</html>
